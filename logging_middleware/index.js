@@ -34,6 +34,8 @@ app.get("/:id", (req, res) => {
 const fetch = require("node-fetch");
 
 
+const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
+
 app.post("/log", async (req, res) => {
   try {
     console.log("📦 Incoming log body:", req.body);
